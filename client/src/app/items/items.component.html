@@ -1,0 +1,23 @@
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+  <label>
+    <input ngModel type="text" name="itemName" required maxlength="10" minlength="2" placeholder="itemname">
+  </label>
+  <br>
+ 
+  <label>
+    <input ngModel type="text" name="itemColor" required placeholder="item_color">
+  </label>
+  <br>
+
+  <label>
+    <input ngModel type="text" name="itemPrice" required maxlength="10" minlength="2" placeholder="item_price">
+  </label>
+  <br>
+
+  <label>
+    <input ngModel type="number" name="itemAmunt" required maxlength="2" minlength="2" placeholder="item_amunt">
+  </label>
+
+
+  <button>add item</button>
+</form>

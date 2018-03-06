@@ -1,0 +1,9 @@
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+  <label>
+    <input ngModel type="text" name="username" required maxlength="10" minlength="4">
+  </label>
+  <label>
+   <input ngModel type="password" name="password" required maxlength="10" minlength="4">
+  </label>
+  <button>send</button>
+</form>

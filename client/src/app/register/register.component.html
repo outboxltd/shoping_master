@@ -1,0 +1,28 @@
+<form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+  <label>
+    <input ngModel type="text" name="username" required maxlength="10" minlength="4" placeholder="username">
+  </label>
+<br>
+  <label>
+    <input ngModel type="password" name="password" required maxlength="10" minlength="4" placeholder="password">
+  </label>
+<br>
+
+  <label>
+  <input ngModel type="text" name="phone" required maxlength="10" minlength="7" placeholder="phone">
+  </label>
+<br>
+
+
+   <label>
+    <input ngModel type="text" name="city" required maxlength="10" minlength="2" placeholder="city">
+  </label>
+<br>
+
+    <label>
+      <input ngModel type="number" name="age" required maxlength="2" minlength="2" placeholder="age">
+    </label>
+
+
+  <button>send</button>
+</form>
